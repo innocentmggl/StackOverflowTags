@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableViewBackgroundView" customModule="StackOverflowTags" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Cg7-BR-uoq"/>
+                <outlet property="infoLabel" destination="eKa-BT-IKG" id="t7p-pU-yXy"/>
+                <outlet property="retryButton" destination="FYP-EB-dpY" id="CQO-BT-NNx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="478"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKa-BT-IKG">
+                    <rect key="frame" x="167" y="239" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYP-EB-dpY">
+                    <rect key="frame" x="152" y="299" width="30" height="30"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocalizedKey" value="Retry"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="retryButtonPressed:" destination="-1" eventType="touchUpInside" id="tht-gE-gmg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.92941802740000001" green="0.92940050360000004" blue="0.92941242459999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="eKa-BT-IKG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="N2G-IJ-s7f"/>
+                <constraint firstItem="FYP-EB-dpY" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NgV-YX-mo6"/>
+                <constraint firstItem="FYP-EB-dpY" firstAttribute="top" secondItem="eKa-BT-IKG" secondAttribute="bottom" constant="60" id="fJD-L8-MTM"/>
+                <constraint firstItem="eKa-BT-IKG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="iSB-vA-olY"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eKa-BT-IKG" secondAttribute="trailing" constant="16" id="jNJ-Hz-u5S"/>
+                <constraint firstItem="eKa-BT-IKG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sJX-E9-L8V"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-297" y="-6"/>
+        </view>
+    </objects>
+</document>

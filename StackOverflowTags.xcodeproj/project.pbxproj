@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F702B179265A96A800713C32 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F702B17B265A96A800713C32 /* Localizable.strings */; };
+		F7105F62265BAB0800DCBA85 /* QuestionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7105F61265BAB0800DCBA85 /* QuestionDetailsViewController.swift */; };
+		F7105F6F265BB9CC00DCBA85 /* QuestionDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7105F6E265BB9CC00DCBA85 /* QuestionDetailsViewController.xib */; };
+		F7105F74265BCF6C00DCBA85 /* QuestionDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7105F73265BCF6C00DCBA85 /* QuestionDetailsViewModel.swift */; };
+		F7E2C4E8265A3954001D6E5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C4E7265A3954001D6E5D /* AppDelegate.swift */; };
+		F7E2C4EA265A3954001D6E5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C4E9265A3954001D6E5D /* SceneDelegate.swift */; };
+		F7E2C4EF265A3954001D6E5D /* Question.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E2C4ED265A3954001D6E5D /* Question.storyboard */; };
+		F7E2C4F1265A3955001D6E5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7E2C4F0265A3955001D6E5D /* Assets.xcassets */; };
+		F7E2C4F4265A3955001D6E5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E2C4F2265A3955001D6E5D /* LaunchScreen.storyboard */; };
+		F7E2C4FF265A3955001D6E5D /* StackOverflowTagsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C4FE265A3955001D6E5D /* StackOverflowTagsTests.swift */; };
+		F7E2C50A265A3955001D6E5D /* StackOverflowTagsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C509265A3955001D6E5D /* StackOverflowTagsUITests.swift */; };
+		F7E2C543265A43DE001D6E5D /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C524265A43DD001D6E5D /* DependencyInjection.swift */; };
+		F7E2C544265A43DE001D6E5D /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C525265A43DD001D6E5D /* DependencyManager.swift */; };
+		F7E2C546265A43DE001D6E5D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C528265A43DD001D6E5D /* Extensions.swift */; };
+		F7E2C547265A43DE001D6E5D /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C529265A43DD001D6E5D /* PropertyWrappers.swift */; };
+		F7E2C548265A43DE001D6E5D /* QuestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C52C265A43DD001D6E5D /* QuestionRepository.swift */; };
+		F7E2C549265A43DE001D6E5D /* QuestionEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C52D265A43DD001D6E5D /* QuestionEndPoint.swift */; };
+		F7E2C54A265A43DE001D6E5D /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C52E265A43DD001D6E5D /* ApiError.swift */; };
+		F7E2C54B265A43DE001D6E5D /* ApiLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C52F265A43DD001D6E5D /* ApiLayer.swift */; };
+		F7E2C54C265A43DE001D6E5D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C530265A43DD001D6E5D /* Router.swift */; };
+		F7E2C54E265A43DE001D6E5D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C533265A43DE001D6E5D /* Question.swift */; };
+		F7E2C54F265A43DE001D6E5D /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C534265A43DE001D6E5D /* ErrorResponse.swift */; };
+		F7E2C550265A43DE001D6E5D /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C538265A43DE001D6E5D /* LoadingIndicator.swift */; };
+		F7E2C552265A43DE001D6E5D /* QuestionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C53D265A43DE001D6E5D /* QuestionListViewController.swift */; };
+		F7E2C553265A43DE001D6E5D /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C53E265A43DE001D6E5D /* QuestionTableViewCell.swift */; };
+		F7E2C554265A43DE001D6E5D /* QuestionListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C53F265A43DE001D6E5D /* QuestionListItemViewModel.swift */; };
+		F7E2C555265A43DE001D6E5D /* TableViewBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C540265A43DE001D6E5D /* TableViewBackgroundView.swift */; };
+		F7E2C556265A43DE001D6E5D /* QuestionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C541265A43DE001D6E5D /* QuestionListViewModel.swift */; };
+		F7E2C557265A43DE001D6E5D /* TableViewBackgroundView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7E2C542265A43DE001D6E5D /* TableViewBackgroundView.xib */; };
+		F7E2C56F265A5419001D6E5D /* QuestionBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E2C56E265A5419001D6E5D /* QuestionBaseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7E2C4FB265A3955001D6E5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7E2C4DC265A3954001D6E5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7E2C4E3265A3954001D6E5D;
+			remoteInfo = StackOverflowTags;
+		};
+		F7E2C506265A3955001D6E5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7E2C4DC265A3954001D6E5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7E2C4E3265A3954001D6E5D;
+			remoteInfo = StackOverflowTags;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F702B17A265A96A800713C32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F7105F61265BAB0800DCBA85 /* QuestionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailsViewController.swift; sourceTree = "<group>"; };
+		F7105F6E265BB9CC00DCBA85 /* QuestionDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionDetailsViewController.xib; sourceTree = "<group>"; };
+		F7105F73265BCF6C00DCBA85 /* QuestionDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailsViewModel.swift; sourceTree = "<group>"; };
+		F7E2C4E4265A3954001D6E5D /* StackOverflowTags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowTags.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E2C4E7265A3954001D6E5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F7E2C4E9265A3954001D6E5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F7E2C4EE265A3954001D6E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Question.storyboard; sourceTree = "<group>"; };
+		F7E2C4F0265A3955001D6E5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7E2C4F3265A3955001D6E5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F7E2C4F5265A3955001D6E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7E2C4FA265A3955001D6E5D /* StackOverflowTagsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowTagsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E2C4FE265A3955001D6E5D /* StackOverflowTagsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowTagsTests.swift; sourceTree = "<group>"; };
+		F7E2C500265A3955001D6E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7E2C505265A3955001D6E5D /* StackOverflowTagsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowTagsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E2C509265A3955001D6E5D /* StackOverflowTagsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowTagsUITests.swift; sourceTree = "<group>"; };
+		F7E2C50B265A3955001D6E5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7E2C524265A43DD001D6E5D /* DependencyInjection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
+		F7E2C525265A43DD001D6E5D /* DependencyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
+		F7E2C528265A43DD001D6E5D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F7E2C529265A43DD001D6E5D /* PropertyWrappers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
+		F7E2C52C265A43DD001D6E5D /* QuestionRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionRepository.swift; sourceTree = "<group>"; };
+		F7E2C52D265A43DD001D6E5D /* QuestionEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionEndPoint.swift; sourceTree = "<group>"; };
+		F7E2C52E265A43DD001D6E5D /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		F7E2C52F265A43DD001D6E5D /* ApiLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiLayer.swift; sourceTree = "<group>"; };
+		F7E2C530265A43DD001D6E5D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F7E2C533265A43DE001D6E5D /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		F7E2C534265A43DE001D6E5D /* ErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		F7E2C538265A43DE001D6E5D /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		F7E2C53D265A43DE001D6E5D /* QuestionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionListViewController.swift; sourceTree = "<group>"; };
+		F7E2C53E265A43DE001D6E5D /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+		F7E2C53F265A43DE001D6E5D /* QuestionListItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionListItemViewModel.swift; sourceTree = "<group>"; };
+		F7E2C540265A43DE001D6E5D /* TableViewBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewBackgroundView.swift; sourceTree = "<group>"; };
+		F7E2C541265A43DE001D6E5D /* QuestionListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionListViewModel.swift; sourceTree = "<group>"; };
+		F7E2C542265A43DE001D6E5D /* TableViewBackgroundView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewBackgroundView.xib; sourceTree = "<group>"; };
+		F7E2C56E265A5419001D6E5D /* QuestionBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBaseViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7E2C4E1265A3954001D6E5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E2C4F7265A3955001D6E5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E2C502265A3955001D6E5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F7E2C4DB265A3954001D6E5D = {
+			isa = PBXGroup;
+			children = (
+				F7E2C4E6265A3954001D6E5D /* StackOverflowTags */,
+				F7E2C4FD265A3955001D6E5D /* StackOverflowTagsTests */,
+				F7E2C508265A3955001D6E5D /* StackOverflowTagsUITests */,
+				F7E2C4E5265A3954001D6E5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F7E2C4E5265A3954001D6E5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7E2C4E4265A3954001D6E5D /* StackOverflowTags.app */,
+				F7E2C4FA265A3955001D6E5D /* StackOverflowTagsTests.xctest */,
+				F7E2C505265A3955001D6E5D /* StackOverflowTagsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F7E2C4E6265A3954001D6E5D /* StackOverflowTags */ = {
+			isa = PBXGroup;
+			children = (
+				F7E2C523265A43DD001D6E5D /* Application */,
+				F7E2C527265A43DD001D6E5D /* Common */,
+				F7E2C52A265A43DD001D6E5D /* Data */,
+				F7E2C532265A43DE001D6E5D /* Models */,
+				F7E2C535265A43DE001D6E5D /* Presentation */,
+				F7E2C564265A44A6001D6E5D /* Resources */,
+			);
+			path = StackOverflowTags;
+			sourceTree = "<group>";
+		};
+		F7E2C4FD265A3955001D6E5D /* StackOverflowTagsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7E2C4FE265A3955001D6E5D /* StackOverflowTagsTests.swift */,
+				F7E2C500265A3955001D6E5D /* Info.plist */,
+			);
+			path = StackOverflowTagsTests;
+			sourceTree = "<group>";
+		};
+		F7E2C508265A3955001D6E5D /* StackOverflowTagsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F7E2C509265A3955001D6E5D /* StackOverflowTagsUITests.swift */,
+				F7E2C50B265A3955001D6E5D /* Info.plist */,
+			);
+			path = StackOverflowTagsUITests;
+			sourceTree = "<group>";
+		};
+		F7E2C523265A43DD001D6E5D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F7E2C4E7265A3954001D6E5D /* AppDelegate.swift */,
+				F7E2C4E9265A3954001D6E5D /* SceneDelegate.swift */,
+				F7E2C524265A43DD001D6E5D /* DependencyInjection.swift */,
+				F7E2C525265A43DD001D6E5D /* DependencyManager.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F7E2C527265A43DD001D6E5D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F7E2C528265A43DD001D6E5D /* Extensions.swift */,
+				F7E2C529265A43DD001D6E5D /* PropertyWrappers.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F7E2C52A265A43DD001D6E5D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F7E2C52B265A43DD001D6E5D /* Repository */,
+				F7E2C52E265A43DD001D6E5D /* ApiError.swift */,
+				F7E2C52F265A43DD001D6E5D /* ApiLayer.swift */,
+				F7E2C530265A43DD001D6E5D /* Router.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F7E2C52B265A43DD001D6E5D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F7E2C52C265A43DD001D6E5D /* QuestionRepository.swift */,
+				F7E2C52D265A43DD001D6E5D /* QuestionEndPoint.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F7E2C532265A43DE001D6E5D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7E2C533265A43DE001D6E5D /* Question.swift */,
+				F7E2C534265A43DE001D6E5D /* ErrorResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F7E2C535265A43DE001D6E5D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F7E2C536265A43DE001D6E5D /* QuestionScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F7E2C536265A43DE001D6E5D /* QuestionScene */ = {
+			isa = PBXGroup;
+			children = (
+				F7E2C56E265A5419001D6E5D /* QuestionBaseViewController.swift */,
+				F7E2C4ED265A3954001D6E5D /* Question.storyboard */,
+				F7E2C537265A43DE001D6E5D /* Utils */,
+				F7E2C53B265A43DE001D6E5D /* QuestionDetails */,
+				F7E2C53C265A43DE001D6E5D /* QuestionList */,
+			);
+			path = QuestionScene;
+			sourceTree = "<group>";
+		};
+		F7E2C537265A43DE001D6E5D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F7E2C538265A43DE001D6E5D /* LoadingIndicator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F7E2C53B265A43DE001D6E5D /* QuestionDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F7105F61265BAB0800DCBA85 /* QuestionDetailsViewController.swift */,
+				F7105F6E265BB9CC00DCBA85 /* QuestionDetailsViewController.xib */,
+				F7105F73265BCF6C00DCBA85 /* QuestionDetailsViewModel.swift */,
+			);
+			path = QuestionDetails;
+			sourceTree = "<group>";
+		};
+		F7E2C53C265A43DE001D6E5D /* QuestionList */ = {
+			isa = PBXGroup;
+			children = (
+				F7E2C53D265A43DE001D6E5D /* QuestionListViewController.swift */,
+				F7E2C53E265A43DE001D6E5D /* QuestionTableViewCell.swift */,
+				F7E2C53F265A43DE001D6E5D /* QuestionListItemViewModel.swift */,
+				F7E2C540265A43DE001D6E5D /* TableViewBackgroundView.swift */,
+				F7E2C541265A43DE001D6E5D /* QuestionListViewModel.swift */,
+				F7E2C542265A43DE001D6E5D /* TableViewBackgroundView.xib */,
+			);
+			path = QuestionList;
+			sourceTree = "<group>";
+		};
+		F7E2C564265A44A6001D6E5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7E2C4F5265A3955001D6E5D /* Info.plist */,
+				F7E2C4F0265A3955001D6E5D /* Assets.xcassets */,
+				F7E2C4F2265A3955001D6E5D /* LaunchScreen.storyboard */,
+				F702B17B265A96A800713C32 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F7E2C4E3265A3954001D6E5D /* StackOverflowTags */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E2C50E265A3955001D6E5D /* Build configuration list for PBXNativeTarget "StackOverflowTags" */;
+			buildPhases = (
+				F7E2C4E0265A3954001D6E5D /* Sources */,
+				F7E2C4E1265A3954001D6E5D /* Frameworks */,
+				F7E2C4E2265A3954001D6E5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StackOverflowTags;
+			productName = StackOverflowTags;
+			productReference = F7E2C4E4265A3954001D6E5D /* StackOverflowTags.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F7E2C4F9265A3955001D6E5D /* StackOverflowTagsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E2C511265A3955001D6E5D /* Build configuration list for PBXNativeTarget "StackOverflowTagsTests" */;
+			buildPhases = (
+				F7E2C4F6265A3955001D6E5D /* Sources */,
+				F7E2C4F7265A3955001D6E5D /* Frameworks */,
+				F7E2C4F8265A3955001D6E5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7E2C4FC265A3955001D6E5D /* PBXTargetDependency */,
+			);
+			name = StackOverflowTagsTests;
+			productName = StackOverflowTagsTests;
+			productReference = F7E2C4FA265A3955001D6E5D /* StackOverflowTagsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F7E2C504265A3955001D6E5D /* StackOverflowTagsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7E2C514265A3955001D6E5D /* Build configuration list for PBXNativeTarget "StackOverflowTagsUITests" */;
+			buildPhases = (
+				F7E2C501265A3955001D6E5D /* Sources */,
+				F7E2C502265A3955001D6E5D /* Frameworks */,
+				F7E2C503265A3955001D6E5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7E2C507265A3955001D6E5D /* PBXTargetDependency */,
+			);
+			name = StackOverflowTagsUITests;
+			productName = StackOverflowTagsUITests;
+			productReference = F7E2C505265A3955001D6E5D /* StackOverflowTagsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7E2C4DC265A3954001D6E5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					F7E2C4E3265A3954001D6E5D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					F7E2C4F9265A3955001D6E5D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F7E2C4E3265A3954001D6E5D;
+					};
+					F7E2C504265A3955001D6E5D = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = F7E2C4E3265A3954001D6E5D;
+					};
+				};
+			};
+			buildConfigurationList = F7E2C4DF265A3954001D6E5D /* Build configuration list for PBXProject "StackOverflowTags" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F7E2C4DB265A3954001D6E5D;
+			productRefGroup = F7E2C4E5265A3954001D6E5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F7E2C4E3265A3954001D6E5D /* StackOverflowTags */,
+				F7E2C4F9265A3955001D6E5D /* StackOverflowTagsTests */,
+				F7E2C504265A3955001D6E5D /* StackOverflowTagsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F7E2C4E2265A3954001D6E5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7105F6F265BB9CC00DCBA85 /* QuestionDetailsViewController.xib in Resources */,
+				F702B179265A96A800713C32 /* Localizable.strings in Resources */,
+				F7E2C4F4265A3955001D6E5D /* LaunchScreen.storyboard in Resources */,
+				F7E2C557265A43DE001D6E5D /* TableViewBackgroundView.xib in Resources */,
+				F7E2C4F1265A3955001D6E5D /* Assets.xcassets in Resources */,
+				F7E2C4EF265A3954001D6E5D /* Question.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E2C4F8265A3955001D6E5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E2C503265A3955001D6E5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7E2C4E0265A3954001D6E5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E2C54E265A43DE001D6E5D /* Question.swift in Sources */,
+				F7E2C554265A43DE001D6E5D /* QuestionListItemViewModel.swift in Sources */,
+				F7E2C552265A43DE001D6E5D /* QuestionListViewController.swift in Sources */,
+				F7E2C54A265A43DE001D6E5D /* ApiError.swift in Sources */,
+				F7E2C555265A43DE001D6E5D /* TableViewBackgroundView.swift in Sources */,
+				F7E2C556265A43DE001D6E5D /* QuestionListViewModel.swift in Sources */,
+				F7E2C549265A43DE001D6E5D /* QuestionEndPoint.swift in Sources */,
+				F7E2C553265A43DE001D6E5D /* QuestionTableViewCell.swift in Sources */,
+				F7105F62265BAB0800DCBA85 /* QuestionDetailsViewController.swift in Sources */,
+				F7E2C550265A43DE001D6E5D /* LoadingIndicator.swift in Sources */,
+				F7E2C547265A43DE001D6E5D /* PropertyWrappers.swift in Sources */,
+				F7E2C54F265A43DE001D6E5D /* ErrorResponse.swift in Sources */,
+				F7E2C4E8265A3954001D6E5D /* AppDelegate.swift in Sources */,
+				F7E2C544265A43DE001D6E5D /* DependencyManager.swift in Sources */,
+				F7E2C54B265A43DE001D6E5D /* ApiLayer.swift in Sources */,
+				F7E2C543265A43DE001D6E5D /* DependencyInjection.swift in Sources */,
+				F7105F74265BCF6C00DCBA85 /* QuestionDetailsViewModel.swift in Sources */,
+				F7E2C4EA265A3954001D6E5D /* SceneDelegate.swift in Sources */,
+				F7E2C548265A43DE001D6E5D /* QuestionRepository.swift in Sources */,
+				F7E2C546265A43DE001D6E5D /* Extensions.swift in Sources */,
+				F7E2C56F265A5419001D6E5D /* QuestionBaseViewController.swift in Sources */,
+				F7E2C54C265A43DE001D6E5D /* Router.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E2C4F6265A3955001D6E5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E2C4FF265A3955001D6E5D /* StackOverflowTagsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7E2C501265A3955001D6E5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7E2C50A265A3955001D6E5D /* StackOverflowTagsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7E2C4FC265A3955001D6E5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7E2C4E3265A3954001D6E5D /* StackOverflowTags */;
+			targetProxy = F7E2C4FB265A3955001D6E5D /* PBXContainerItemProxy */;
+		};
+		F7E2C507265A3955001D6E5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7E2C4E3265A3954001D6E5D /* StackOverflowTags */;
+			targetProxy = F7E2C506265A3955001D6E5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F702B17B265A96A800713C32 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F702B17A265A96A800713C32 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F7E2C4ED265A3954001D6E5D /* Question.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7E2C4EE265A3954001D6E5D /* Base */,
+			);
+			name = Question.storyboard;
+			sourceTree = "<group>";
+		};
+		F7E2C4F2265A3955001D6E5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7E2C4F3265A3955001D6E5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F7E2C50C265A3955001D6E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F7E2C50D265A3955001D6E5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F7E2C50F265A3955001D6E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6JNL5JNEV;
+				INFOPLIST_FILE = StackOverflowTags/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.innocent.StackOverflowTags;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				WEB_SERVICE_BASE_URL = "https://api.stackexchange.com/";
+			};
+			name = Debug;
+		};
+		F7E2C510265A3955001D6E5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6JNL5JNEV;
+				INFOPLIST_FILE = StackOverflowTags/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.innocent.StackOverflowTags;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				WEB_SERVICE_BASE_URL = "https://api.stackexchange.com/";
+			};
+			name = Release;
+		};
+		F7E2C512265A3955001D6E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6JNL5JNEV;
+				INFOPLIST_FILE = StackOverflowTagsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.innocent.StackOverflowTagsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverflowTags.app/StackOverflowTags";
+			};
+			name = Debug;
+		};
+		F7E2C513265A3955001D6E5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6JNL5JNEV;
+				INFOPLIST_FILE = StackOverflowTagsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.innocent.StackOverflowTagsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverflowTags.app/StackOverflowTags";
+			};
+			name = Release;
+		};
+		F7E2C515265A3955001D6E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6JNL5JNEV;
+				INFOPLIST_FILE = StackOverflowTagsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.innocent.StackOverflowTagsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StackOverflowTags;
+			};
+			name = Debug;
+		};
+		F7E2C516265A3955001D6E5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K6JNL5JNEV;
+				INFOPLIST_FILE = StackOverflowTagsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.innocent.StackOverflowTagsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StackOverflowTags;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F7E2C4DF265A3954001D6E5D /* Build configuration list for PBXProject "StackOverflowTags" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E2C50C265A3955001D6E5D /* Debug */,
+				F7E2C50D265A3955001D6E5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7E2C50E265A3955001D6E5D /* Build configuration list for PBXNativeTarget "StackOverflowTags" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E2C50F265A3955001D6E5D /* Debug */,
+				F7E2C510265A3955001D6E5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7E2C511265A3955001D6E5D /* Build configuration list for PBXNativeTarget "StackOverflowTagsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E2C512265A3955001D6E5D /* Debug */,
+				F7E2C513265A3955001D6E5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7E2C514265A3955001D6E5D /* Build configuration list for PBXNativeTarget "StackOverflowTagsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7E2C515265A3955001D6E5D /* Debug */,
+				F7E2C516265A3955001D6E5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7E2C4DC265A3954001D6E5D /* Project object */;
+}

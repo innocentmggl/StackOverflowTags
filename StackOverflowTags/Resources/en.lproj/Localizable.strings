@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  StackOverflowTags
+
+  Created by Innocent Magagula on 2021/05/24.
+  
+*/
+
+"Technical Error" = "Unknow technical error, please try again";
+"Search" = "Search";
+"Empty response" = "No content, please try again";
+"Stack Overflow Search" = "Stack Overflow Search";
+"No questions found" = "No questions found for searched tag, please enter a different tag and try again";
+
+"asked by" = "asked by ";
+"Vote" = "Vote";
+"Votes" = "Votes";
+"answer" = "answer";
+"answers" = "answers";
+"view" = "view";
+"views" = "views";
+"asked" = "asked";
+"at" = "at";
+
+/** ERROR STRING*/
+"Retry" = "Try Again";
+"The Internet connection appears to be offline." = "Could not connect, please check your internet connection and try again.";
